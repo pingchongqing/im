@@ -1,0 +1,824 @@
+/*2017-4-13 by 张宸昊
+kefu/callCenter.html
+kefu/callSearch.html
+kefu/coinsEnter.html
+kefu/fpCenter.html
+kefu/fpResult.html
+kefu/resultNone.html
+kefu/searchList.html
+kefu/searchNotFind.html
+kefu/searchResult.html
+kefu/verifyCenter.html
+kefu/verifyError.html
+kefu/verifySuccess.html
+*/
+
+/*底部导航*/
+
+.index-foot {
+    float: left;
+    width: 100%;
+    line-height: 1.03rem;
+    border-top: 1px solid #e8e8e8;
+    background: #fcfcfc;
+    text-align: center;
+    z-index: 20;
+}
+
+.index-foot ul li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 20%;
+    font-weight: bold;
+}
+
+.index-foot ul li a {
+    color: #333;
+    display: block;
+    width: 100%;
+    font-size: .32rem;
+}
+
+.index-foot ul li a.cur {
+    background: #f75e46;
+    color: #fff;
+}
+
+.index-foot .badge {
+    position: absolute;
+    top: .14rem;
+    display: inline-block;
+    width: .35rem;
+    height: .35rem;
+    border-radius: 50%;
+    font-size: .24rem;
+    text-align: center;
+    color: #fff;
+    line-height: .35rem;
+    background: #f75e46;
+}
+
+/*客服中心*/
+
+.pt-head {
+    padding-top: .96rem;
+    margin-top: 1px;
+}
+
+.bg-fa {
+    background-color: #fafafa;
+}
+
+.call-search {
+    /*display: flex;*/
+    padding-top: 1.16rem;
+    padding-bottom: .2rem;
+    background: #c9c9ce;
+}
+
+.search {
+    width: 100%;
+    font-size: .3rem;
+    color: #ccc;
+    border: none;
+    height: .76rem;
+    line-height: .76rem;
+    text-align: center;
+    background: url(../../images/kefu/search.png) no-repeat 1.68rem center #fff;
+    background-size: .29rem .29rem;
+    border-radius: .12rem !important;
+}
+
+.search1 {
+    width: 82%;
+    font-size: .3rem;
+    color: #ccc;
+    border: none;
+    height: .76rem;
+    line-height: .76rem;
+    text-align: center;
+    background: url(../../images/kefu/search.png) no-repeat 2.2rem center #fff;
+    background-size: .29rem .29rem;
+    border-radius: .06rem !important;
+}
+
+.search-btn {
+    float: left;
+    width: 18%;
+    height: .62rem;
+    font-size: .3rem;
+    text-align: center;
+    line-height: .62rem;
+    color: #f75e46;
+}
+
+.focus-search {
+    width: 82%;
+    float: left;
+    font-size: .3rem;
+    color: #000;
+    border: none;
+    height: .62rem;
+    line-height: .62rem;
+    text-align: left;
+    padding-left: .62rem;
+    padding-right: .75rem;
+    background: url(../../images/kefu/search.png) no-repeat .2rem center #fff;
+    background-size: .29rem .29rem;
+    border-radius: .1rem !important;
+}
+
+.color-01 {
+    color: #010101;
+}
+
+.lh40 {
+    line-height: .4rem;
+}
+
+.lh60 {
+    line-height: .6rem;
+}
+
+.pb-40 {
+    padding-bottom: .4rem;
+}
+
+.pt-50 {
+    padding-top: .5rem;
+}
+
+.pb-50 {
+    padding-bottom: .5rem;
+}
+
+.call-menu {
+    /*display: flex;*/
+    width: 100%;
+    /*flex-wrap: wrap;*/
+}
+
+.call-menu li {
+    /* display: inline-block;*/
+    float: left;
+    width: 1.09rem;
+    height: 2rem;
+    margin-right: .66rem;
+    text-align: center;
+    position: relative;
+    /* text-align: center;*/
+}
+
+.call-menu li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.call-menu a {
+    padding-top: .4rem;
+    display: block;
+    width: 100%;
+}
+
+.call-menu li img {
+    width: 1.09rem;
+    height: 1.09rem;
+}
+.call-menu li span {
+    display: block;
+    margin-top: .22rem;
+    text-align: center;
+}
+.call-list li span{
+    width: 1.41rem;
+    position: absolute;
+    left: -0.16rem;
+}
+
+@media screen and (min-width: 769px){
+    .call-menu li {
+
+        margin-right: 3.22rem;
+
+        /* text-align: center;*/
+    }
+}
+
+
+/*搜索*/
+
+.close {
+    bottom: .2rem;
+    right: 1.4rem;
+    width: .6rem;
+    height: .76rem;
+    text-align: center;
+    line-height: .76rem;
+}
+
+.close img {
+    width: .3rem;
+    height: .3rem;
+}
+
+.lh84 {
+    line-height: .84rem;
+}
+
+.hot-search {
+    width: 100%;
+}
+
+.hot-search li {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+.hot-search li a {
+    display: block;
+    width: 100%;
+    /*padding: .3rem;*/
+    padding-left: 0;
+    font-size: .32rem;
+    color: #323232;
+    /*overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*line-height: .8rem;*/
+    line-height: 1rem;
+    background: url("../../images/kefu/right.png") no-repeat 94% center;
+    background-size: .15rem .25rem;
+}
+
+/*.hot-search li:nth-child(odd):after {
+  content: '';
+  position: absolute;
+  top: .23rem;
+  right: 0;
+  width: 1px;
+  height: .56rem;
+  background-color: #ddd;
+}
+
+.hot-search li:nth-child(even) a {
+  padding-left: .3rem;
+}*/
+
+.color-c5 {
+    color: #c5c5c5;
+}
+
+.pt-162 {
+    padding-top: 1.62rem;
+}
+
+.search-none {
+    padding-bottom: 1.64rem;
+    text-align: center;
+}
+
+.search-none p {
+    margin-bottom: .34rem;
+}
+
+.search-none img {
+    width: calc(100% - .34rem)
+}
+
+.lh88 {
+    line-height: .88rem;
+}
+
+.kf a {
+    display: block;
+    width: 100%;
+    font-size: .36rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #f75e46;
+    /*background: url(../../images/kefu/kf.png) no-repeat 2.08rem center;
+      background-size: .54rem .56rem;*/
+    border: 1px solid #ff4e00;
+}
+
+.kf a img {
+    width: .54rem;
+    height: .56rem;
+    margin-right: .2rem;
+    vertical-align: -.12rem;
+}
+
+.btn1 {
+    float: left;
+    width: 3.3rem;
+    font-size: .36rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #f75e46;
+    /*background: url(../../images/kefu/kf.png) no-repeat .3rem center;
+      background-size: .54rem .56rem;*/
+    border: 1px solid #ff4e00;
+}
+
+.btn1 img {
+    margin-right: .2rem;
+    width: .54rem;
+    height: .56rem;
+    vertical-align: -.12rem;
+}
+
+.btn2 {
+    float: right;
+    width: 3.3rem;
+    font-size: .36rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #f75e46;
+    /*background: url(../../images/kefu/tel.png) no-repeat .3rem center;
+      background-size: .5rem .53rem;*/
+    border: 1px solid #ff4e00;
+}
+
+.btn2 img {
+    width: .5rem;
+    height: .5rem;
+    margin-right: .2rem;
+    vertical-align: -.12rem;
+}
+
+.search-result li {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.search-result li a {
+    display: block;
+    width: 100%;
+    background: url("../../images/kefu/right.png") no-repeat 94% 55%;
+    background-size: .15rem .25rem;
+}
+
+.search-result li:last-child {
+    border-bottom: none;
+}
+
+.color-33 {
+    color: #323232;
+}
+
+.lh100 {
+    line-height: 1rem;
+}
+
+.mb-25 {
+    margin-bottom: .25rem;
+}
+
+.result-da {
+    line-height: .55rem;
+    /*width: .64rem;*/
+}
+
+.result-text {
+    width: 85%;
+    line-height: .6rem;
+}
+
+.result-none img {
+    width: 100%;
+}
+
+.menu-title {
+    padding-top: 1.26rem;
+}
+
+.pl-48 {
+    padding-left: .48rem !important;
+}
+
+/*.menu-title span {
+    position: absolute;
+    top: .02rem;
+    left: .3rem;
+    display: inline-block;
+    width: .06rem;
+    height: .36rem;
+    background-color: #f75e46;
+}*/
+.menu-title span {
+    padding-left: .2rem;
+    border-left: 3px solid #f75e46;
+}
+
+.result-list a {
+    /*overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;*/
+    height: 1rem;
+    line-height: 1rem;
+    /*	padding-top: .3rem;
+        padding-bottom: .3rem;*/
+    background: url("../../images/kefu/right.png") no-repeat 95% center;
+    background-size: .15rem .25rem;
+}
+
+.result-list li:last-child a {
+    border-bottom: none;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-control {
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%, -50%);*/
+    width: 1.14rem;
+    height: 1.14rem;
+    margin-top: -.57rem;
+    margin-left: -.57rem;
+    background: url(../../images/kefu/play.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 5;
+}
+
+.swiper-stop {
+    background: url(../../images/kefu/stop.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.lh80 {
+    line-height: .8rem;
+}
+
+.study a {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    background: url("../../images/kefu/right.png") no-repeat 94% 55%;
+    background-size: .15rem .25rem;
+}
+
+.study li:last-child a {
+    border: none;
+}
+
+.case-title {
+    padding-top: 1.26rem;
+}
+
+.lh48 {
+    line-height: .48rem;
+}
+
+.lh78 {
+    line-height: .78rem;
+}
+
+/*验证*/
+
+.verify:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: .3rem;
+    width: .06rem;
+    height: .36rem;
+    margin-top: -.18rem;
+    margin-left: -.15rem;
+    background-color: #f75e46;
+}
+
+.verify input {
+    display: block;
+    border: none;
+    width: 100%;
+    font-size: .32rem;
+    color: #000;
+    height: .6rem;
+    padding-left: .25rem;
+}
+
+.py-25 {
+    padding: .25rem 0;
+}
+
+.verify-btn {
+    display: block;
+    width: 100%;
+    font-size: .36rem;
+    color: #fff;
+    text-align: center;
+    background-color: #f75e46;
+    line-height: .92rem;
+}
+
+.verify-l {
+    width: 20%;
+}
+
+.verify-l img {
+    width: 1.29rem;
+    height: 1.29rem;
+}
+
+.verify-r {
+    width: 80%;
+    padding-left: .44rem;
+}
+
+.verify-r p {
+    margin-top: .27rem;
+}
+
+.mt-45 {
+    margin-top: .45rem !important;
+}
+
+.fix-online {
+    position: fixed;
+    width: 100%;
+    bottom: 1.03rem;
+    left: 0;
+}
+
+.proclamation {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.bl-f75e46 {
+    padding-left: .2rem;
+    border-left: 3px solid #f75e46;
+}
+
+.bg-c9 {
+    background-color: #c9c9ce;
+}
+
+.go-next {
+    text-align: center;
+    height: .62rem;
+    line-height: .62rem;
+    border-radius: .12rem;
+}
+
+.go-next span {
+    padding-left: .45rem;
+    font-size: .3rem;
+    color: #8e8e93;
+    background: url(../../images/kefu/search.png) no-repeat left center;
+    background-size: .29rem .29rem;
+}
+
+/*07-05修改 by 曹磊*/
+.mt-120 {
+    margin-top: 1.2rem;
+}
+
+.bg-1fa {
+    background: #1fa1f3
+}
+
+.color-32 {
+    color: #323232;
+}
+
+.color-469df7 {
+    color: #469df7
+}
+
+.bg-c9c {
+    background-color: #c9c9ce !important;
+}
+
+.border-radius {
+    border-radius: 0.1rem !important;
+}
+
+i.tips {
+    width: 0.05rem;
+    height: 0.26rem;
+    display: inline-block;
+    background: #f75e46;
+}
+
+.maskDiv {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.top-header .top-right .new-top-home {
+    height: 0.96rem;
+    display: inline-block;
+    background: url("../../images/Icon/home.png") no-repeat left;
+    background-size: 0.45rem 0.45rem;
+}
+
+.search-left-input {
+    width: 88%;
+    height: 0.62rem;
+    line-height: 0.62rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.search-left-input i.icon-fdj {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.62rem;
+    height: 0.62rem;
+    display: inline-block;
+    background: url("../../images/Icon/seach-ico.png") no-repeat center;
+    background-size: 0.35rem;
+}
+
+.search-left-input input {
+    width: 100%;
+    height: 0.62rem;
+    line-height: 0.62rem;
+    padding-left: 0.7rem;
+    float: left;
+}
+
+.search-right-word {
+    width: 12%;
+    height: 0.62rem;
+    line-height: 0.62rem;
+    text-align: right;
+}
+
+.title-tip {
+    line-height: 0.32rem
+}
+
+.title-tip i {
+    width: 0.06rem;
+    height: 0.32rem;
+    background: #f75e46;
+    display: inline-block;
+}
+
+.useful {
+    width: 49.5%;
+    height: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.useful span {
+    width: 80%;
+    height: 1.3rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.useful em {
+    width: 50%;
+    height: 1.3rem;
+    display: inline-block;
+}
+
+.useful em.icon-useful {
+    background: url("../../images/kefu/icon-useful.png") no-repeat right;
+    background-size: 0.66rem 0.63rem;
+}
+
+.useful em.icon-useless {
+    background: url("../../images/kefu/icon-useless.png") no-repeat right;
+    background-size: 0.66rem 0.63rem;
+}
+
+.bomb-box {
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    margin-left: 10%;
+    margin-top: -1.2rem;
+    z-index: 999;
+}
+
+.bomb-box h3 {
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.bomb-commit a {
+    display: block;
+    width: 49.5%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+}
+
+.pro-list .to-right {
+    position: absolute;
+    right: 0.3rem;
+    top: 0.825rem;
+    width: 0.15rem;
+    height: 0.23rem;
+    display: inline-block;
+    background: url("../../images/kefu/right.png") no-repeat center;
+    background-size: 0.15rem 0.23rem;
+}
+
+.banner-two li {
+    width: 50%;
+    height: 0.95rem;
+    line-height: 0.95rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.banner-two li.active {
+    height: 0.96rem;
+    border-bottom: 0.03rem solid #f75e46;
+    color: #f75e46;
+}
+
+.box-img img {
+    width: 1.48rem;
+    height: 1.48rem;
+}
+
+.sure-box a {
+    width: 80%;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    display: block;
+    margin-left: 10%;
+}
+
+.p-box p {
+    width: 74%;
+    margin-left: 13%;
+}
+
+.px-66 {
+    padding-left: .66rem;
+    padding-right: .66rem;
+}
+
+.call-menut li {
+    /*width: auto !important;*/
+    width: 33.3333%;
+    height: 2rem;
+    margin-right: 0;
+    position: relative;
+}
+.call-menut li  a{
+    /*width: auto !important;*/
+    width: 1.09rem;
+}
+.a-center{
+    position: absolute;
+    left: 50%;
+    margin-left: -0.545rem;
+}
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+/*
+.par {
+    position: absolute;
+    right: .63rem;
+}
+
+.pac {
+    position: absolute;
+    left: 50%;
+    margin-left: -.545rem;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

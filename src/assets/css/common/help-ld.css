@@ -1,0 +1,341 @@
+@charset "utf-8";
+/* CSS Document */
+.top-header .head-share {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+}
+.buyer-pro {
+    margin: .05rem .15rem 0;
+    /*background-position: .15rem 0;*/
+    height: auto;
+    display: block;
+
+    background: url(../../images/buyer-bj.png) repeat-y .25rem 0;
+}
+.buyer-pro ul li {
+    padding-bottom: .25rem;
+}
+.buyer-pro ul li .pro-left {
+    float: left;
+    width: .47rem;
+    height:.55rem;
+}
+.buyer-pro ul li .pro-left-bj {
+    background-color: #fff;
+}
+
+.buyer-pro ul li .pro-left span.hover {
+    background-color: #f75f47;
+    color: #fff;
+    line-height: .4rem;
+    text-align: center;
+}
+.buyer-pro ul li .pro-left span {
+    display: block;
+    width: .54rem;
+    height: .54rem;
+    border-radius: 50%;
+    margin-top: .31rem;
+    font-size: .16rem;
+    border: 3px solid #fff;
+}
+.buyer-pro ul li .pro-left span i.buy-ico {
+    display: block;
+    width: .46rem;
+    height: .44rem;
+    background: url(../../images/buyer-01.png) no-repeat center center;
+    background-size: .1rem;
+}
+.buyer-pro ul li .pro-right {
+    position: relative;
+    margin-left: .65rem;
+    padding: .31rem 0;
+    width: 88%;
+    height: auto;
+}
+.buyer-pro ul li .pro-right h2 {
+    font-size: .28rem;
+    line-height: .44rem;
+}
+.buyer-pro ul li .pro-right .rg-img {
+    margin-top: .1rem;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+.buyer-pro ul li .pro-right .rg-img img {
+    width: 100%;
+}
+.swiper-container {
+    width: 100%;
+    padding: .3rem 0;
+    height: 5.6rem;
+    overflow: hidden;
+    background: #000;
+    box-sizing: border-box;
+}
+.border-bottom {
+    border-bottom: 1px solid #e8e8e8;
+}
+ .detail-pic div {
+    float: left;
+    margin: 0 !important;
+    width: 100%;
+    height: 5.8rem;
+    overflow: Hidden;
+    text-align: center;
+}
+ .detail-pic a {
+    vertical-align: middle;
+    width: 100%;
+    line-height: 10rem;
+}
+ .detail-pic img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 5rem;
+    margin-top: -5.1rem;
+}
+.swiper-container .swiper-pagination {
+    font-size: .3rem;
+    margin-right: .32rem;
+    width: 1rem;
+    background: #333;
+    right: 0;
+    opacity: .9;
+    left: auto;
+    border-radius: .06rem;
+    color: #fff;
+    line-height: 0.54rem;
+    bottom: .3rem;
+}
+.top-header .head-share a {
+    display: block;
+    margin-right: .2rem;
+    background: url(../../images/share.png) right center no-repeat;
+    text-indent: -9999px;
+    background-size: .4rem;
+}
+/*.....................help中relived页面.......................*/
+.relieved-main {
+    height: auto;
+    display: block;
+    overflow: hidden;
+    padding-bottom: .6rem;
+}
+.relpic01 {
+    width:4rem;
+    height:2.91rem;
+    margin: .56rem auto 0.37rem;
+}
+.relpic01 img {
+    width: 100%;
+}
+.relieved-main p {
+    font-size: 0.26rem;
+    line-height: 0.38rem;
+    color: #000000;
+    text-align: center;
+    margin-top: .27rem;
+}
+.relpic02 {
+    width: 3.06rem;
+    height: 0.43rem;
+    margin: .73rem auto 0;
+}
+.relpic02 img {
+    width: 100%;
+}
+.relpic03 {
+    width: 4.38rem;
+    height: 4.51rem;
+    margin: 0.4rem auto 0;
+}
+.relpic03 img {
+    width: 100%;
+}
+.relphow {
+    max-width: 768px;
+    /*margin: 0.92rem 0.33rem 0;*/
+    margin: 0.92rem auto;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+.relphow .how-left {
+    float: left;
+    width: 0.7rem;
+    height: 0.67rem;
+    background: url(../../images/relie-one.png) no-repeat center center;
+    text-indent: -999rem;
+    background-size: 0.34rem;
+}
+.relphow .how-right {
+    float: left;
+    width: 6.06rem;
+}
+.relphow .how-right h2 {
+    height: 0.35rem;
+    width: 6.06rem;
+    margin-bottom: 0.24rem;
+}
+.relphow .how-right p {
+    font-size: 0.26rem;
+    line-height: 0.38rem;
+    color: #000000;
+    text-align: left;
+}
+.relphow .how-right h3 {
+    font-size: 0.24rem;
+    color: #999999;
+    margin-top: 0.2rem;
+}
+.relpic06 {
+    width: 3.34rem;
+    height: 3.34rem;
+    margin: 0.52rem auto 0;
+}
+.relpic06 img {
+    width: 100%;
+}
+.relphow .rep-left {
+    float: left;
+    width: .93rem;
+    height: 0.67rem;
+    background: url(../../images/relie-two.png) no-repeat center center;
+    text-indent: -999rem;
+    background-size: 0.52rem;
+}
+.relphow .rep-right {
+    float: left;
+    width: 5.83rem;
+}
+.relphow .rep-right h2 {
+    height: 0.35rem;
+    width: 5.83rem;
+    margin-bottom: 0.24rem;
+}
+.relphow .rep-right h2 img {
+    height: 100%;
+}
+.relphow .rep-right p {
+    font-size: 0.26rem;
+    line-height: 0.38rem;
+    color: #000000;
+    text-align: left;
+}
+.relpic08 {
+    width: 6.35rem;
+    height:7.78rem;
+    margin: .6rem auto 0;
+}
+.relpic08 img {
+    width: 100%;
+}
+.relehw {
+    max-width: 768px;
+
+    margin: .85rem auto;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+.relehw .relehw-tile {
+    margin-left: 0.2rem;
+    width: 7.02rem;
+    height: 0.39rem;
+}
+.relehw .relehw-tile img {
+    height: 100%;
+}
+.relehw-conn .rele-ti {
+    float: left;
+    width: 2.08rem;
+    text-align: right;
+    font-size: 0.26rem;
+    color: #000000;
+    padding-right: 0.1rem;
+    margin-top: 0.35rem;
+}
+.relehw-conn .rele-de {
+    float: left;
+    font-size: 0.26rem;
+    line-height: 0.38rem;
+    color: #000000;
+    width: 4.83rem;
+    margin-top: 0.32rem;
+}
+.relehw-conn {
+    width: 7.02rem;
+    height: auto;
+}
+.relehw-conn p {
+    text-align: left;
+    margin-left: .33rem;
+}
+.relehw h3 {
+    font-size: 0.26rem;
+    color: #000000;
+    margin: 0.39rem 0 0.28rem;
+    text-align: center;
+}
+.relehw .relist01 {
+    width: 6.4rem;
+    height: 4.19rem;
+    margin: 0 auto;
+}
+.relehw .relist01 img {
+    width: 100%;
+}
+.relehw .relist02 {
+    width:5.75rem;
+    height: 0.91rem;
+    margin: 0 auto;
+}
+.relehw .relist02 img {
+    width: 100%;
+}
+.relehw h4 {
+    font-size: 0.26rem;
+    color: #000000;
+    margin: 0.39rem auto 0.28rem;
+    line-height: 0.38rem;
+    width: 5.8rem;
+}
+.relehw-ehw {
+    margin-left: 0.2rem;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+.relehw-ehw .ehw-tit {
+    line-height: 0.5rem;
+    margin-top: 0.24rem;
+    font-size: 0.24rem;
+    color: #000000;
+}
+.relehw-ehw .ehw-con {
+    margin-left: 0.26rem;
+    line-height: 0.36rem;
+    font-size: 0.24rem;
+    color: #000000;
+}
+.relphow .how-right h2 img {
+    height: 100%;
+}
+
+
+.security-main{ height:auto; display:block; overflow:hidden;}
+.security-main .srity-titl{height:auto; display:block; overflow:hidden; padding:0.55rem 0.3rem 0.60rem;  }
+.security-main .srity-titl h2{ line-height:0.45rem; margin:0.2rem 0;}
+.security-main .srity-titl p{height:0.58rem; line-height:0.58rem; }
+.srity-conn img{ width:0.34rem; height:0.34rem;}
+
+.security-main .srity-conn{ padding:0 0.3rem 0.8rem;}
+.security-main .srity-conn h2{ line-height:0.45rem; margin-top:0.7rem; margin-bottom:0.25rem; }
+.security-main .srity-conn p{ line-height:0.4rem; }
+
+.security-main .sity-img{margin: 0 auto; width:6.8rem; height:auto; display:block; overflow:hidden; }
+.security-main .sity-img img{ width:100%; height:100%;}

@@ -1,0 +1,43 @@
+.top-back-homg {
+    width: 1.16rem;
+    height: 1.16rem;
+    background: url('../../images/evaulation/special_home.png') no-repeat 50%;
+    background-size: .72rem 1.16rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+@media screen and (min-width: 769px) {
+    .top-back-homg {
+        width: 116px;
+        height: 116px;
+        background: url('../../images/evaulation/special_home.png') no-repeat 50%;
+        background-size: 72px 116px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+@media screen and (max-width: 360px){
+    /* iPhone 5*/
+    .jpzh .jpzh-word .word-p{
+        padding-left: .1rem !important;
+    }
+}
+@media screen and (max-width: 411px){
+    .csdl .csdl-word {
+        bottom: 0.1rem;
+    }
+}
+@media screen and (min-width: 412px){
+    /* iPhone 6Plus*/
+    .jbxh .jbxh-word {
+        width: 2.6rem;
+    }
+}
+@media screen and (min-width: 769px) {
+    .jbxh .jbxh-word {
+        width: 270px;
+    }
+}
